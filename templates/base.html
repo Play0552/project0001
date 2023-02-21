@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+	<title>СкидОчка</title>
+</head>
+<body>
+	<header>
+		<h1>какой нибудь заголовок</h1>
+	</header>
+	<main>
+		<div class="menu">
+			<ul>
+			{% for cat in catigories %}
+				<li>{{cat}}</li>
+			{% endfor %}
+			</ul>
+		</div>
+	</main>
+</body>
+</html>
